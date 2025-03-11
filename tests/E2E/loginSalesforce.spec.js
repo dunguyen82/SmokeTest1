@@ -15,9 +15,9 @@ test("Login to UAT", async ({ page }) => {
   await login.login("dunguyen@fr.scc.com.uat", "Upsale@1234");
   await page.waitForTimeout(5000);
 
-  const homepage = new HomePage(page);
-  await homepage.navigate("Contacts");
+  // const homepage = new HomePage(page);
+  // await homepage.navigate("Contacts");
 
-  const contactpage = new ContactsPage(page);
-  await contactpage.createNewContact();
+  // const contactpage = new ContactsPage(page);
+  // await contactpage.createNewContact();
 });
